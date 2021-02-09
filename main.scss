@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#110c2b;
+    font-family: 'Montserrat', sans-serif;
+    color: #110c2b;
+}
+
+#container{
+    height: 900px;
+    width: 1000px;
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    h1{
+        font-size: 2.5rem;
+    }
+    #circle{
+        width: 370px;
+        height: 380px;
+        background-color: #110c2b;
+    }
+    label{
+        font-weight: 600;
+    }
+    .generator {
+        -webkit-appearance: none;
+        width: 80%;
+        height: 25px;
+        background: #d3d3d3;
+        outline: none;
+        opacity: 0.8;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+      }
+      
+      .generator:hover {
+        opacity: 1;
+      }
+      
+      .generator::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        background: #110c2b;
+        cursor: pointer;
+      }
+      
+      .generator::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        background: #110c2b;
+        cursor: pointer;
+        border-radius: 10px; // A SUPPRIMER
+      }
+}
+
+// BORDER RADIUS AFFICHAGE
+
+#generatorValue{
+    background-color: #151718;
+    padding: 15px 25px;
+    // border-radius: 999px;
+}
+
+.property{
+    color: #47b5db;
+}
+.points{
+    color: white;
+}
+.value{
+    color: #b5c077;
+}

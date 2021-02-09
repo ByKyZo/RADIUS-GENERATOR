@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #110c2b;
+  font-family: "Montserrat", sans-serif;
+  color: #110c2b;
+}
+
+#container {
+  height: 900px;
+  width: 1000px;
+  background-color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+#container h1 {
+  font-size: 2.5rem;
+}
+#container #circle {
+  width: 370px;
+  height: 380px;
+  background-color: #110c2b;
+}
+#container label {
+  font-weight: 600;
+}
+#container .generator {
+  -webkit-appearance: none;
+  width: 80%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.8;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+#container .generator:hover {
+  opacity: 1;
+}
+#container .generator::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #110c2b;
+  cursor: pointer;
+}
+#container .generator::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #110c2b;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#generatorValue {
+  background-color: #151718;
+  padding: 15px 25px;
+}
+
+.property {
+  color: #47b5db;
+}
+
+.points {
+  color: white;
+}
+
+.value {
+  color: #b5c077;
+}
+
+/*# sourceMappingURL=style.css.map */
